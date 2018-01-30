@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/face?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&useSSL=false&serverTimezone=GMT%2b8
+    username: root
+    password: 920515
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    password:
+    timeout: 0
+    pool:
+      max-active: 20
+      max-idle: 20
+      max-wait: -1
+      min-idle: 0
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    database: mysql
+    generate-ddl: true
+    show-sql: true
+server:
+  port: 8881
+  context-path: /guoan-sso
+token:
+  cacheTime: 1800
+  tokenKey: GUOANJIA_TOKEN_
